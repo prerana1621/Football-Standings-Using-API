@@ -170,17 +170,14 @@ body.dark-mode #erbtn:hover {
     right: 30px;
     display: flex;
     flex-direction: column;
-    /* Change to vertical layout */
     align-items: flex-end;
     gap: 6px;
-    /* Adds some spacing between label and toggle */
 }
 
 .mode-label {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.4;
-    /* Slightly taller line height */
     margin: 0;
 }
 
