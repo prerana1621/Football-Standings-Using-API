@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Football Standings</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Football Standings Viewer</h1>
+
+    <div id="error">⚠️You need a temporary access to the demo, <b><i>click</i></b> the below button to redirect to the page and after clicking <b><i>refresh the page</i></b>.
+        <br>
+        <button id="erbtn" onclick="getAccess()">Click</button>
+    </div>
+    <br>
+
+    <label for="competitionSelect">Select Competition:</label>
+    
+    <select id="competitionSelect">
+        <option value="PL">Premier League</option>
+        <option value="PD">La Liga</option>
+        <option value="SA">Serie A</option>
+        <option value="BL1">Bundesliga</option>
+        <option value="FL1">Ligue 1</option>
+        <option value="CL">Champions League</option>
+        <option value="WC">World Cup</option>
+    </select>
+    <button  id="standings" onclick="getStandings()"">Get Standings</button>
+
+    <div id="tableContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

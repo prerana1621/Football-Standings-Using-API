@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+select,
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#error{
+    background-color: #2bbeeb;
+    padding: 10px;
+    margin-left: 125px;
+    margin-right: 125px;
+    border-radius:5px ;
+}
+
+#erbtn{
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px;
+    border-radius: 10px;
+    padding:10px;
+}
+
+#erbtn:hover{
+    background-color: aquamarine;
+    color: #333;
+}
+
+#competitionSelect{
+    border-radius: 15px;
+}
+#standings{
+    border-radius: 15px;
+}
+#standings:hover{
+    background-color: rgb(15, 241, 177);
+}
