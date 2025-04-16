@@ -1,66 +1,230 @@
+/* Fonts & Reset */
+body,
+h1,
+label,
+select,
+button {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light Mode Base */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f4f9fb;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
     padding: 30px;
-    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
 }
 
 h1 {
-    color: #333;
+    font-size: 2rem;
+    color: #008cba;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    font-weight: 600;
+    font-size: 16px;
 }
 
 select,
 button {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 16px;
-    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
-table {
-    width: 80%;
-    margin: 30px auto;
-    border-collapse: collapse;
+select {
     background-color: #fff;
+    min-width: 200px;
+}
+
+button {
+    background-color: #00c9a7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #009f88;
+}
+
+#error {
+    background-color: #e3f6f5;
+    color: #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #00c9a7;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#erbtn {
+    margin-top: 10px;
+    background-color: #00c9a7;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#erbtn:hover {
+    background-color: #009f88;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #00c9a7;
+    color: white;
+    font-weight: 600;
 }
 
 th,
 td {
     padding: 12px;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
-th {
-    background-color: #4CAF50;
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #181818;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #222;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+body.dark-mode #error {
+    background-color: #333;
+    color: #ddd;
+    border-left-color: #00c9a7;
+}
+
+body.dark-mode table {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+}
+
+body.dark-mode th {
+    background-color: #008cba;
+}
+
+body.dark-mode tr:hover {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode button,
+body.dark-mode #erbtn {
+    background-color: #008cba;
     color: white;
 }
 
-#error{
-    background-color: #2bbeeb;
-    padding: 10px;
-    margin-left: 125px;
-    margin-right: 125px;
-    border-radius:5px ;
+body.dark-mode button:hover,
+body.dark-mode #erbtn:hover {
+    background-color: #0074a2;
 }
 
-#erbtn{
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px;
-    border-radius: 10px;
-    padding:10px;
+/* Toggle Switch */
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    /* Change to vertical layout */
+    align-items: flex-end;
+    gap: 6px;
+    /* Adds some spacing between label and toggle */
 }
 
-#erbtn:hover{
-    background-color: aquamarine;
-    color: #333;
+.mode-label {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.4;
+    /* Slightly taller line height */
+    margin: 0;
 }
 
-#competitionSelect{
-    border-radius: 15px;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
 }
-#standings{
-    border-radius: 15px;
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
-#standings:hover{
-    background-color: rgb(15, 241, 177);
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #00c9a7;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
 }

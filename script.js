@@ -51,3 +51,23 @@ async function getStandings() {
     document.getElementById("tableContainer").innerHTML = `<p>Error: ${error.message}</p>`;
   }
 }
+
+function toggleDarkMode() {
+  const body = document.body;
+  const label = document.getElementById("modeLabel");
+  const isDark = body.classList.toggle("dark-mode");
+  label.textContent = isDark ? "Dark Mode" : "Light Mode";
+  localStorage.setItem("darkMode", isDark);
+  document.getElementById("darkModeToggle").checked = isDark;
+}
+
+window.onload = function () {
+  const darkEnabled = localStorage.getItem("darkMode") === "true";
+  if (darkEnabled) {
+    document.body.classList.add("dark-mode");
+    document.getElementById("darkModeToggle").checked = true;
+    document.getElementById("modeLabel").textContent = "Dark Mode";
+  } else {
+    document.getElementById("modeLabel").textContent = "Light Mode";
+  }
+};

@@ -3,33 +3,47 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football Standings</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Football Standings Viewer</h1>
-
-    <div id="error">⚠️You need a temporary access to the demo, <b><i>click</i></b> the below button to redirect to the page and after clicking <b><i>refresh the page</i></b>.
-        <br>
-        <button id="erbtn" onclick="getAccess()">Click</button>
+    <!-- Toggle Switch -->
+    <div class="toggle-container">
+        <label class="mode-label" id="modeLabel">Light Mode</label>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+            <span class="slider round"></span>
+        </label>
     </div>
-    <br>
 
-    <label for="competitionSelect">Select Competition:</label>
-    
-    <select id="competitionSelect">
-        <option value="PL">Premier League</option>
-        <option value="PD">La Liga</option>
-        <option value="SA">Serie A</option>
-        <option value="BL1">Bundesliga</option>
-        <option value="FL1">Ligue 1</option>
-        <option value="CL">Champions League</option>
-        <option value="WC">World Cup</option>
-    </select>
-    <button  id="standings" onclick="getStandings()"">Get Standings</button>
+    <div class="container">
+        <h1>⚽ Football Standings Viewer</h1>
 
-    <div id="tableContainer"></div>
+        <div id="error">
+            ⚠️ You need temporary access to the demo. <b><i>Click</i></b> the button below to redirect, then
+            <b><i>refresh the page</i></b>.<br />
+            <button id="erbtn" onclick="getAccess()">Get Access</button>
+        </div>
+
+        <div class="controls">
+            <label for="competitionSelect">Choose League:</label>
+            <select id="competitionSelect">
+                <option value="PL">Premier League</option>
+                <option value="PD">La Liga</option>
+                <option value="SA">Serie A</option>
+                <option value="BL1">Bundesliga</option>
+                <option value="FL1">Ligue 1</option>
+                <option value="CL">Champions League</option>
+                <option value="WC">World Cup</option>
+            </select>
+            <button id="standings" onclick="getStandings()">View Standings</button>
+        </div>
+
+        <div id="tableContainer"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
