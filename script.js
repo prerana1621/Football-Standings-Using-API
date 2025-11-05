@@ -1,4 +1,4 @@
-const API_KEY = "68cc087e400e4656a93fd54920e848c5";
+const API_KEY = "YOUR_API_KEY_HERE";
 
 function getAccess() {
   window.open("https://cors-anywhere.herokuapp.com/", "_blank");
