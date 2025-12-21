@@ -35,7 +35,7 @@ async function getStandings() {
       container.innerHTML = "Loading...";
       chartSection.classList.add("hidden"); // hide chart initially
   
-      const res = await fetch(`http://localhost:3000/standings/${league}`);
+      const res = await fetch(`https://football-standings-using-api.onrender.com/standings/${league}`);
       const data = await res.json();
   
       allTeams = data.standings[0].table;
