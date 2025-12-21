@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Football Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 📊 Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- 🌙 Dark Mode Toggle -->
+    <div class="toggle-container">
+        <span id="modeLabel">Light Mode</span>
+        <label class="switch">
+            <input type="checkbox" id="darkToggle" onclick="toggleDarkMode()" />
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <h1>⚽ Football Analytics Dashboard</h1>
+
+    <div class="controls">
+        <select id="competitionSelect">
+            <option value="PL">Premier League</option>
+            <option value="PD">La Liga</option>
+            <option value="SA">Serie A</option>
+            <option value="BL1">Bundesliga</option>
+            <option value="FL1">Ligue 1</option>
+        </select>
+        <button onclick="getStandings()">View Standings</button>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search team..." onkeyup="filterTeams()" />
+    </div>
+
+    <div class="sort-box">
+        <select id="sortSelect" onchange="sortTeams()">
+            <option value="points">Sort by Points</option>
+            <option value="wins">Sort by Wins</option>
+            <option value="losses">Sort by Losses</option>
+            <option value="name">Sort by Name</option>
+        </select>
+    </div>
+
+    <!-- 📊 CHART -->
+    <div class="chart-container hidden" id="chartSection">
+        <canvas id="pointsChart"></canvas>
+    </div>
+    <div id="chartWrapper" class="hidden">
+        <div class="chart-container">
+          <canvas id="pointsChart"></canvas>
+        </div>
+      </div>      
+
+    <div id="tableContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
