@@ -6,7 +6,7 @@ The project is designed with **secure API handling**, keeping the API key hidden
 
 ---
 
-## 🌐 Demo
+## 🌐 Live Demo
 
 - **Frontend (Netlify):**  
   👉 https://football-analytics-dashboard.netlify.app/
