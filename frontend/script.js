@@ -10,7 +10,6 @@ function toggleDarkMode() {
     document.getElementById("modeLabel").textContent = isDark ? "Dark Mode" : "Light Mode";
     localStorage.setItem("darkMode", isDark);
   
-    // 🔥 FORCE CHART UPDATE
     if (chartInstance && currentTeams.length > 0) {
       renderChart(currentTeams);
     }
@@ -33,7 +32,7 @@ async function getStandings() {
   
     try {
       container.innerHTML = "Loading...";
-      chartSection.classList.add("hidden"); // hide chart initially
+      chartSection.classList.add("hidden"); 
   
       const res = await fetch(`https://football-standings-using-api.onrender.com/standings/${league}`);
       const data = await res.json();
@@ -44,15 +43,14 @@ async function getStandings() {
       sortTeams();
       renderChart(allTeams);
   
-      chartSection.classList.remove("hidden"); // ✅ show chart ONLY now
+      chartSection.classList.remove("hidden"); 
   
     } catch (e) {
       container.innerHTML = "❌ Error loading data";
-      chartSection.classList.add("hidden"); // keep hidden on error
+      chartSection.classList.add("hidden"); 
       console.error(e);
     }
 }
-    
     
 /* ---------------- TABLE ---------------- */
 function renderTable(teams) {
@@ -96,7 +94,7 @@ function filterTeams() {
   
     sortTeams();
   
-    // Hide chart if no teams match
+    
     if (currentTeams.length === 0) {
       chartSection.classList.add("hidden");
     } else {
@@ -118,7 +116,7 @@ function sortTeams() {
   renderTable(sorted);
 }
 
-/* ---------------- 📊 CHART ---------------- */
+/* ---------------- CHART ---------------- */
 function renderChart(teams) {
     const canvas = document.getElementById("pointsChart");
 canvas.style.height = "100%";
@@ -152,7 +150,7 @@ canvas.style.width = "100%";
         scales: {
           x: {
             ticks: {
-              color: isDark ? "#f1f1f1" : "#222",   // ✅ TEAM NAMES
+              color: isDark ? "#f1f1f1" : "#222",   
               font: {
                 size: 13,
                 weight: "600"
@@ -166,7 +164,7 @@ canvas.style.width = "100%";
           },
           y: {
             ticks: {
-              color: isDark ? "#f1f1f1" : "#222",   // ✅ POINTS
+              color: isDark ? "#f1f1f1" : "#222",  
               font: {
                 size: 13,
                 weight: "600"
