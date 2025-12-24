@@ -1,16 +1,29 @@
 # ⚽ Football Analytics Dashboard
-![Netlify](https://img.shields.io/badge/Frontend-Netlify-00C7B7?logo=netlify&logoColor=white)
-![Render](https://img.shields.io/badge/Backend-Render-46E3B7?logo=render&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Live-success)
-![License](https://img.shields.io/badge/License-Educational-blue)
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Live-success" />
+  <img src="https://img.shields.io/badge/Frontend-Netlify%20(Free)-00C7B7?logo=netlify&logoColor=white" />
+  <img src="https://img.shields.io/badge/Backend-Render%20(Free)-46E3B7?logo=render&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-Educational-blue" />
+</p>
 
-![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
-![Chart.js](https://img.shields.io/badge/Chart.js-Visualizations-FF6384)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-API-black)
-![Author](https://img.shields.io/badge/Author-Prerana%20Acharyya-purple)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Chart.js-Data%20Visualization-FF6384" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-API-black" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Architecture-Frontend%20%E2%86%92%20Backend%20%E2%86%92%20External%20API-purple" />
+  <img src="https://img.shields.io/badge/API%20Security-Backend%20Proxy%20%7C%20Key%20Hidden-brightgreen" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Author-Prerana%20Acharyya-purple" />
+  <img src="https://img.shields.io/badge/Role-Full--Stack%20Developer-blueviolet" />
+</p>
 
 A full-stack football analytics web application that displays **live league standings**, interactive charts, and team statistics with a clean UI and dark mode support.
 
