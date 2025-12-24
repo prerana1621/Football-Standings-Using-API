@@ -1,8 +1,8 @@
 # ⚽ Football Analytics Dashboard
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Live-success" />
-  <img src="https://img.shields.io/badge/Frontend-Netlify%20(Free)-00C7B7?logo=netlify&logoColor=white" />
-  <img src="https://img.shields.io/badge/Backend-Render%20(Free)-46E3B7?logo=render&logoColor=white" />
+  <img src="https://img.shields.io/badge/Frontend-Netlify%20-00C7B7?logo=netlify&logoColor=white" />
+  <img src="https://img.shields.io/badge/Backend-Render%20-46E3B7?logo=render&logoColor=white" />
   <img src="https://img.shields.io/badge/License-Educational-blue" />
 </p>
 
@@ -153,6 +153,8 @@ This is a deliberate architectural decision, not a limitation.
 Prerana Acharyya
 
 Full-Stack Developer
+
+GitHub: https://github.com/prerana1621
 
 ---
 ### 📄 License
