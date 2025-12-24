@@ -1,4 +1,16 @@
 # ⚽ Football Analytics Dashboard
+![Netlify](https://img.shields.io/badge/Frontend-Netlify-00C7B7?logo=netlify&logoColor=white)
+![Render](https://img.shields.io/badge/Backend-Render-46E3B7?logo=render&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Live-success)
+![License](https://img.shields.io/badge/License-Educational-blue)
+
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Chart.js](https://img.shields.io/badge/Chart.js-Visualizations-FF6384)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-API-black)
+![Author](https://img.shields.io/badge/Author-Prerana%20Acharyya-purple)
 
 A full-stack football analytics web application that displays **live league standings**, interactive charts, and team statistics with a clean UI and dark mode support.
 
